@@ -47,12 +47,12 @@ https://www.kaggle.com/datasets/datasetengineer/ovarian-cancer-risk-and-progress
   - Vitesse Doppler sanguine
 
 - **Reproductives et hormonales** :  
-  - Parité (0–3)   (nombre de grossesses ??)
+  - Parité (0–3)   (nombre de grossesses)
   - Contraceptifs oraux & hormonothérapie (oui/non)  
   - Âge de ménarche & ménopause
 
 
-  Timestamp contient l’horodatage de chaque enregistrement (chaque heure entre janvier 2019 et décembre 2024)
+  Timestamp contient l’horodatage de chaque enregistrement 
 
 ### Variables cibles
 
@@ -67,37 +67,29 @@ https://www.kaggle.com/datasets/datasetengineer/ovarian-cancer-risk-and-progress
 │
 ├── notebooks/                  # Cahiers Jupyter pour exploration et modélisation
 │   ├── 01_exploration.ipynb    # Analyse descriptive et nettoyage
-│   ├── 02_baseline_models.ipynb# Régressions et SVM de base
-│   ├── 03_random_forest.ipynb  # Construction et tuning de Random Forest
+│   ├── 02_models.ipynb        # Régressions et SVM de base
+│   ├── 03_optimisation.ipynb   # Construction et tuning de Random Forest
 │   └── 04_interpretation.ipynb # Explicabilité (SHAP, LIME, PDP…)
 │
 ├── src/                        # Modules Python réutilisables
-│   ├── data_loader.py          # Chargement et prétraitement des données
 │   ├── models.py               # Définitions des modèles ML
-│   └── explainability.py       # Fonctions pour PDP, ALE, SHAP, LIME
 │
 ├── requirements.txt            # Dépendances Python
 ├── README.md                   # Présentation du projet
-└── LICENSE                     # Licence du projet
+└── 
+└── cancer-svm.md               # Résultats et commentaires
 ```
 
 
 
 ## Utilisation
 
-- **Exploration des données** :  Pour explorer les données et les comprendre `notebooks/01_exploration.ipynb`.  
-- **Modèles de base** : Nous permet de tester plusieurs modeles  `notebooks/02_models.ipynb`.  
-- **Optimisation** : configurer et optimiser dans `notebooks/03_optimisation.ipynb`.  
-- **Explicabilité** : interpréter modèles et prédictions avec `notebooks/04_interpretation.ipynb`.
-
-## Auteurs et contact
-
-- **Équipe de projet**
-Emma LABRE-BLANC
-Isabel PALACIO
+- **Exploration des données** :  Pour explorer les données et les comprendre `notebooks/01_exploration.ipynb`
+- **Modèles de base** : Nous permet de tester plusieurs modeles  `notebooks/02_models.ipynb`
+- **Optimisation** : configurer et optimiser dans `notebooks/03_optimisation.ipynb` 
+- **Explicabilité** : interpréter modèles et prédictions avec `notebooks/04_interpretation.ipynb`
 
 
-- Pour toute question : projet@ibe-munich.org
 
 ---
 

@@ -103,11 +103,6 @@ En modélisant **les deux**, on peut :
 
 
 
-
-
-
-
-
 ## Approche globale du projet
 
 1. **Nettoyage des données**  
@@ -138,10 +133,42 @@ En modélisant **les deux**, on peut :
    - LIME
    - ICE plots
 
+----
+
+## I. EDA : Exploration
+
+
+**Résumé statistique**
+
+
+
+
+**Types**
 
 
 
 
 
+**Anomalies**
+
+
+
+
+**Corrélation**
+
+Des corrélations faibles partout, même entre des variables comme :
+
+Age vs Parity (nombre de grossesses)
+
+Age vs MenopauseAge
+
+Parity vs MenarcheAge
+
+CancerStage vs TumorSize
+
+devrait au minimum produire des corrélations modérées, et là, on tourne autour de 0.00x voire négatives très faibles partout. Pareil pour la corrélation de Spearman le constat est le même : les coefficients restent très faibles
+
+
+**Hypothèse principale : données simulées indépendamment**
 
 
